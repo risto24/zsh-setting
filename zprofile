@@ -1,5 +1,5 @@
 # welcome message
-figlet -f standard Hello Geeks
+#figlet -f standard Hello Geeks
 
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
@@ -11,6 +11,7 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources:$PATH
 export FZF_DEFAULT_OPTS='--height 50% --reverse --border'
+export PATH=/usr/local/go/bin
 
 fd() {
   local dir
