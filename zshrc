@@ -26,8 +26,6 @@ alias pbcopy="xsel --clipboard --input"
 setopt no_flow_control
 # lazygit コマンド
 alias lg="lazygit"
-# エクスプローラーを開く
-alias open="xdg-open"
 # viをvimにする
 alias vi="vim"
 # 補完有効化
@@ -50,7 +48,7 @@ precmd () { vcs_info }
 
 # プロンプトの左側表示
 #PROMPT='%F{208}[%f%F{184}%l%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
-PROMPT='%F{208}[%f%F{184}%l%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
+PROMPT='%F{208}[%f%F{184}%n%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
 # PROMPT='%F{184}%l%f%F{087}%~%f${vcs_info_msg_0_}%# '
 #PROMPT='%~ %# '
 
