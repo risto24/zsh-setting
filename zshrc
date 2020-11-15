@@ -47,13 +47,9 @@ zstyle ':vcs_info:*' actionformats '(%b|%a)'
 precmd () { vcs_info }
 
 # プロンプトの左側表示
-#PROMPT='%F{208}[%f%F{184}%l%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
 PROMPT='%F{208}[%f%F{184}%n%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
-# PROMPT='%F{184}%l%f%F{087}%~%f${vcs_info_msg_0_}%# '
-#PROMPT='%~ %# '
 
 # fzf用設定
-
 fvim() {
   files=$(git ls-files) &&
   selected_files=$(echo "$files" | fzf -m  --preview 'head -100 {}') &&
