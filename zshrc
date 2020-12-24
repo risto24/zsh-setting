@@ -20,8 +20,12 @@ alias todo='git grep -ne " TODO:" -ne " FIXME:" -ne " HACK:"|tr -d " "|grep --co
 alias rm="rm -i"
 # docker-composeコマンド
 alias dcom="docker-compose"
+# gitコマンド
+alias g="git"
 # コマンド結果コピーコマンド
 alias pbcopy="xsel --clipboard --input"
+# docker-compose
+alias dc="docker-compose"
 # Ctrl+sのロック, Ctrl+qのロック解除を無効にする
 setopt no_flow_control
 # lazygit コマンド
