@@ -42,12 +42,13 @@ setopt prompt_subst
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' stagedstr "%F{184}!"
 zstyle ':vcs_info:git:*' unstagedstr "%F{red}+"
-zstyle ':vcs_info:*' formats "%F{208} %c%u%b%f"
+zstyle ':vcs_info:*' formats " %F{208}%c%u%b%f"
 zstyle ':vcs_info:*' actionformats '(%b|%a)'
 precmd () { vcs_info }
 
 # プロンプトの左側表示
-PROMPT='%F{208}[%f%F{184}%n%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
+PROMPT='%F{087}%c%f${vcs_info_msg_0_} %# '
+# PROMPT='%F{208}[%f%F{184}%n%f%F{087} %~%f${vcs_info_msg_0_}%F{208}]%f%# '
 
 # fzf用設定
 fvim() {
